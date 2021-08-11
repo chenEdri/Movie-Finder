@@ -1,27 +1,25 @@
 # MyMovies
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.0.
-
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli), based on [omdbapi](https://www.omdbapi.com/) and [Angular-Material](https://material.angular.io/)
+ 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+### option 1:
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`.
+The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+### option 2:
+go to my [git-hub page](https://chenedri.github.io/Movie-Finder/)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Api Astrategy:
+there are two options of 'GET' :  or by movie Title.
+### Movie Title: 
+Will get a small object with five fields.
+In this app I used other optional requests in the params such as:'Year' , 'Type' and 'Plot'.
+### IMDBID:
+widll get a big object with more than 12 fields.
+I used this method in order to get a larger detailed object from the api.
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Angular-Material:
+I used angular material in order to practice another libary that has a lot of options in it. 
+In this app I used the FieldModule, DialogModule, CustomMatTheme and more.
