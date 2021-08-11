@@ -1,6 +1,7 @@
 {
   "name": "my-movies",
   "version": "0.0.0",
+  "homepage": " https://chenedri.github.io/Movie-Finder/",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
