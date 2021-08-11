@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+}
+
+::selection {
+    background-color: #61949f;
+    color: #61949f;
+}
+
+html {
+    font-family: LatoR;
+    line-height: 1.6;
+}
+
+body {
+    background-color: #242222dc;
+    font-size: rem(18px);
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: LatoB;
+    margin: 0 0 0.6em;
+    color:#c7d9dd;
+    line-height: 1;
+}
+
+h1 {
+    font-size: rem(68px);
+}
+
+img {
+    width: 100%;
+}
+
+p {
+    margin: 0 0 1em;
+    // max-width: 40ch;
+}
+
