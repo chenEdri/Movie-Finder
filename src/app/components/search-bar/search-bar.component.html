@@ -1,0 +1,36 @@
+<section>
+  <div>
+    <h4 class="find-movies">Find your Movie</h4>
+  </div>
+  <form class="search-bar-container flex sb align-center">
+    <mat-form-field appearance="fill">
+      <mat-label>Movie Name</mat-label>
+      <input matInput [(ngModel)]="searchBy.title" name="searchBy.title"/>
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Plot</mat-label>
+      <mat-select [(ngModel)]="searchBy.plot" name="searchBy.plot">
+        <mat-option value="short">Short</mat-option>
+        <mat-option value="full">Full</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Type</mat-label>
+      <mat-select [(ngModel)]="searchBy.type" name="searchBy.type">
+        <mat-option value="movie">Movie</mat-option>
+        <mat-option value="series">series</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Year</mat-label>
+      <input
+        matInput
+        [maxLength]="4"
+        placeholder="2021"
+        [(ngModel)]="searchBy.year"
+        name="searchBy.year"
+      />
+    </mat-form-field>
+    <button mat-button color="primary" class="submit-btn" (click)="onSearchMovie()">Submit</button>
+  </form>
+</section>

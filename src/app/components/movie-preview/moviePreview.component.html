@@ -1,0 +1,9 @@
+<section class="flex column m-card-container">
+  <div class="m-body"(click)="openDialog(movie)">
+    <img class="m-poster" mat-card-md-image src="{{ movie.Poster }}" />
+    <div class="overlay" >
+      <div mat-card-title class="m-title">{{ movie.Title }}</div>
+      <div class="m-tag flex justify-center align-center">Explore</div>
+    </div>
+  </div>
+</section>

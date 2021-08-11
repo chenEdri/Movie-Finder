@@ -1,0 +1,6 @@
+<section class="main-container ">
+  <app-search-bar (getInfo)="getInfo($event)"></app-search-bar>
+  <div *ngIf="movies">
+    <app-movie-list [movies]="movies" (openMovieDialog)="openMovieDialog($event)"></app-movie-list>
+  </div>
+</section>

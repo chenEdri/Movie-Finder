@@ -2,9 +2,18 @@
 // `ng build` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 
-export const environment = {
-  production: false
-};
+// const omdbApi = 'http://www.omdbapi.com/?i=tt3896198&apikey=f7129c48';
+// const apiK= 'apikey=f7129c48';
+  export const environment = {
+    production: false,
+    config: {
+      omdbApi: {
+        url: 'http://www.omdbapi.com/',
+        apiKey: 'f7129c48',
+      },
+    },
+    apiUrl: 'http://localhost:4200',
+  };
 
 /*
  * For easier debugging in development mode, you can import the following file

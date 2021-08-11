@@ -1,1 +1,76 @@
-/* You can add global styles to this file, and also import other style files */
+
+@use '~@angular/material' as mat;
+
+@include mat.core();
+
+$myMovies-primary: mat.define-palette(mat.$teal-palette, 500, 100, 900);
+$myMovies-accent: mat.define-palette(mat.$green-palette, A200, A100, A400);
+$myMovies-warn: mat.define-palette(mat.$red-palette);
+// $customColor: (
+//   50: #e9f0f1 ,
+//   100: #c7d9dd,
+//   200: #a2c0c7 ,
+//   300: #7da7b0,
+//   400: #61949f,
+//   500: #45818e,
+//   600: #3e7986,
+//   700: #366e7b,
+//   800: #2e6471,
+//   900: #1f515f,
+//   A100: #9fe9ff,
+//   A200: #6cddff,
+//   A400: #39d2ff,
+//   A700: #1fccff,
+//   contrastDefaultColor: Dark,
+//   contrastDarkColors: (
+//     50,
+//     100,
+//     200,
+//     300,
+//     400,
+//     A100,
+//     A200,
+//     A400,
+//     A700,
+//   ),
+//   contrastLightColors: (
+//     500,
+//     600,
+//     700,
+//     800,
+//     900,
+//   ),
+// );
+
+$myMovies-theme: mat.define-dark-theme(
+  (
+    color: (
+      primary: $myMovies-primary,
+      accent: $myMovies-accent,
+      warn: $myMovies-warn,
+    ),
+  )
+);
+
+
+@include mat.all-component-themes($myMovies-theme);
+@include mat.all-component-colors($myMovies-theme);
+// Setup
+@import "./assets/style/setup/functions";
+@import "./assets/style/setup/mixins";
+@import "./assets/style/setup/typography";
+@import "./assets/style/setup/variables";
+// Basics
+@import "./assets/style/basics/base";
+@import "./assets/style/basics/buttons";
+@import "./assets/style/basics/_form";
+@import "./assets/style/basics/helpers";
+@import "./assets/style/basics/layout";
+@import "./assets/style/basics/links";
+
+
+// Components
+@import "./assets/style/components/footer";
+@import "./assets/style/components/header";
+@import "./assets/style/components/movie";
+@import "./assets/style/components/movieDialog";

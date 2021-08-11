@@ -1,0 +1,33 @@
+.main-header {
+    color:#7da7b0;
+    margin-left: auto;
+    margin-right: auto;
+    height: 80px;
+    text-align: center;
+    border-bottom: 1px solid #a2c0c7;
+    font-size: 20px;
+    &>*{
+        display: flex;
+    }
+}
+.logo{
+    width:40px;
+}
+.left-nav{
+    width:50%;
+    
+    &>*{
+        margin-left: rem(20px);
+    }
+
+}
+
+.right-nav{
+    width: 30%;
+    justify-content: flex-end;
+
+    &>*{
+        margin-left: rem(10px);
+        margin-right: rem(10px);
+    }
+}

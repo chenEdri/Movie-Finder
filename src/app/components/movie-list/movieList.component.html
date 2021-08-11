@@ -1,0 +1,5 @@
+<section class="movie-container">
+  <div class="card-grid">
+    <app-movie-preview *ngFor="let movie of movies" [movie]="movie" (openM)="openM($event)"></app-movie-preview>
+  </div>
+</section>
